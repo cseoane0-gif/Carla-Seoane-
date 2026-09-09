@@ -247,14 +247,15 @@
   .pasos li p{ margin: 0; }
 
   /* ---------- 5) Presupuesto ---------- */
-  .presupuesto-nota{
-    margin-top: 1.5rem;
-    background: var(--card);
-    border-left: 3px solid var(--hilo);
-    padding: 1rem 1.25rem;
-    font-size: 0.95rem;
-    color: var(--tinta-suave);
+  .lista-presupuesto{
+    margin: 1.75rem 0 2rem 0;
+    padding-left: 1.2rem;
   }
+  .lista-presupuesto li{
+    margin-bottom: 0.85rem;
+    color: var(--tinta);
+  }
+  .lista-presupuesto li::marker{ color: var(--ceramica); }
 
   /* ---------- 6) Preguntas frecuentes (con <details> nativo, sin JS) ---------- */
   .faq{ margin-top: 1.5rem; }
@@ -424,18 +425,22 @@
     </div>
   </section>
 
-  <!-- 5. CÓMO ARMO UN PRESUPUESTO -->
+  <!-- 5. CÓMO SE ARMA EL PRESUPUESTO (sin precios: el único camino al número es la reunión) -->
   <section id="presupuesto">
     <div class="contenedor">
       <h2>¿Cuánto sale?</h2>
-      <p>Cada local es distinto, así que el número lo hablamos en una reunión de 20 minutos, después de que veas la demo. Nunca antes, porque no tendría sentido tirar un precio sin saber qué necesitás.</p>
-      <div class="presupuesto-nota">
-        No vas a encontrar precios en esta página — y es a propósito, no por evasiva. Se define junto a vos, según tu catálogo y tu local.
-      </div>
-      <div class="objecion">
-        <p class="pregunta">"¿Por qué no hay precios acá?"</p>
-        <p class="respuesta">Porque un número sin contexto no le sirve a nadie. Primero vemos qué necesitás, después hablamos de costo.</p>
-      </div>
+      <ul class="lista-presupuesto">
+        <li>Cada local es distinto, así que no hay una tabla de precios fija.</li>
+        <li>Primero mostramos qué se puede hacer: por eso la demo va antes que cualquier otra cosa.</li>
+        <li>Si te cierra lo que ves, agendamos 20 minutos para conocer tu local en detalle.</li>
+        <li>Recién en esa charla hablamos de la inversión — nunca antes.</li>
+        <li>Así el número que te doy contempla tus productos reales, no un genérico.</li>
+        <li>La reunión no te compromete a nada, es solo para ver si tiene sentido para vos.</li>
+        <li>No hay letra chica ni sorpresas después de esa charla.</li>
+        <li>Si decidís avanzar, ahí armamos juntas los detalles y los tiempos.</li>
+      </ul>
+      <!-- Placeholder de WhatsApp: reemplazar 54911XXXXXXXX por el número real (con código de país y sin espacios ni guiones) -->
+      <a class="boton-agendar" href="https://wa.me/54911XXXXXXXX" target="_blank" rel="noopener">Agendá la reunión de 20 minutos</a>
     </div>
   </section>
 
