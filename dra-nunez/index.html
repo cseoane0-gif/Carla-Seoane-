@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Packs Dra. Amalia Núñez</title>
+<title>Packs de Preparación Quirúrgica · Dra. Amalia Ana Núñez</title>
+<meta name="description" content="Te ayudo a prepararte para vivir tu cirugía con menos miedo, más información y confianza. Dra. Amalia Ana Núñez, médica anestesióloga.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <style>
-/* Layout: una columna amplia y calma, letra grande para un público mayor; los packs en tres tarjetas con la del medio destacada */
+/* Una columna calma, letra grande para público mayor. WhatsApp siempre a mano. */
 :root{
   --bg:#f5f7f6; --surface:#ffffff; --ink:#16302f; --muted:#4e6362; --line:#d5e0de;
   --teal:#145a57; --teal-soft:#e2efed; --gold:#a8792b; --gold-soft:#f6ecd9; --on-teal:#ffffff;
@@ -23,112 +24,128 @@
   --bg:#0f1b1b; --surface:#152625; --ink:#e4efed; --muted:#a3b8b5; --line:#2a403e;
   --teal:#5fb8b0; --teal-soft:#183533; --gold:#d9ad5f; --gold-soft:#3a2e17; --on-teal:#0f1b1b; --wa:#5cc28a; color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font:18px/1.6 var(--f-body);padding-bottom:84px}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 var(--f-body);padding-bottom:88px}
 .wrap{max-width:1040px;margin:0 auto;padding-inline:20px}
 h1,h2,h3{font-family:var(--f-display);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
-h1{font-size:clamp(2.2rem,5.5vw,3.6rem);letter-spacing:-.015em}
+h1{font-size:clamp(2.3rem,6vw,3.8rem);letter-spacing:-.015em}
 h2{font-size:clamp(1.7rem,3.6vw,2.4rem)}
 h3{font-size:1.45rem}
 p{margin:0}
 a{color:var(--teal)}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .draft{background:var(--gold-soft);color:var(--ink);font-size:.85rem;text-align:center;padding:6px 16px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:700 1.05rem var(--f-body);text-decoration:none;border:2px solid transparent;cursor:pointer}
+.kicker{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:700 1.05rem var(--f-body);text-decoration:none;border:2px solid transparent;cursor:pointer;text-align:center;line-height:1.2}
 .btn.primary{background:var(--teal);color:var(--on-teal)}
 .btn.wa{background:var(--wa);color:var(--on-teal)}
 .btn.ghost{border-color:var(--teal);color:var(--teal);background:transparent}
 .btn svg{width:22px;height:22px;flex:none}
+@media (prefers-reduced-motion:no-preference){.btn{transition:transform .15s}.btn:hover{transform:translateY(-1px)}}
 
 header.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:22px}
-.brand{font-family:var(--f-display);font-size:1.25rem;font-weight:600}
+.brand{font-family:var(--f-display);font-size:1.25rem;font-weight:600;line-height:1.2}
 .brand small{display:block;font-family:var(--f-body);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.brand span{display:block;font-family:var(--f-body);font-size:.8rem;font-weight:400;color:var(--muted)}
 
-.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding-block:28px 56px}
-.hero .lead{font-size:1.25rem;color:var(--muted);margin-top:18px;max-width:34ch}
-.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.timeline{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
-.timeline .label{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700}
-.timeline ol{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:0}
-.timeline li{display:grid;grid-template-columns:22px 1fr;gap:14px;padding-bottom:18px;position:relative}
-.timeline li:last-child{padding-bottom:0}
-.timeline li::before{content:"";width:14px;height:14px;border-radius:50%;border:3px solid var(--teal);background:var(--surface);margin-top:6px;position:relative;z-index:1}
-.timeline li:not(:last-child)::after{content:"";position:absolute;left:6px;top:20px;bottom:0;width:2px;background:var(--line)}
-.timeline b{display:block}
-.timeline span{color:var(--muted);font-size:.95rem}
-@media (max-width:820px){.hero{grid-template-columns:1fr}}
+.hero{padding-block:20px 48px;display:grid;gap:22px;max-width:760px}
+.hero .lead{font-family:var(--f-display);font-size:clamp(1.35rem,2.6vw,1.75rem);line-height:1.35;color:var(--teal);font-weight:500}
+.hero p.body{color:var(--muted);font-size:1.1rem;max-width:56ch}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
 
 section{padding-block:52px}
-.section-head{display:grid;gap:10px;margin-bottom:28px;max-width:60ch}
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.section-head{display:grid;gap:10px;margin-bottom:28px;max-width:62ch}
 .section-head p{color:var(--muted)}
+.stack{display:grid;gap:14px;max-width:62ch}
+.stack p{color:var(--muted)}
 
 .fears{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-.fear{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;font-family:var(--f-display);font-size:1.3rem;line-height:1.3}
+.fear{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:20px;font-family:var(--f-display);font-size:1.3rem;line-height:1.3}
 
-.free{background:var(--teal-soft);border-radius:22px;padding:34px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
-.free p{color:var(--muted);margin-top:8px;max-width:52ch}
-@media (max-width:760px){.free{grid-template-columns:1fr}}
+.free{background:var(--teal-soft);border-radius:22px;padding:32px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.free p{color:var(--muted);margin-top:8px;max-width:56ch}
+@media (max-width:760px){.free{grid-template-columns:1fr;padding:26px 22px}}
 
 .packs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
 @media (max-width:900px){.packs{grid-template-columns:1fr}}
 .pack{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px 24px;display:flex;flex-direction:column;gap:16px;position:relative;min-width:0}
 .pack.featured{border:2px solid var(--teal)}
 .badge{position:absolute;top:-14px;left:24px;background:var(--teal);color:var(--on-teal);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+.pack .num{margin-bottom:-10px}
 .pack .for{color:var(--muted);font-size:1rem}
 .price{font-family:var(--f-display);font-size:2.6rem;font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
-.price small{font-family:var(--f-body);font-size:1rem;font-weight:400;color:var(--muted)}
-.pack ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;flex:1;align-content:start}
+.pack ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;align-content:start}
 .pack li{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:1rem;line-height:1.45}
 .pack li::before{content:"";width:18px;height:18px;margin-top:3px;border-radius:50%;background:var(--teal-soft);box-shadow:inset 0 0 0 2px var(--teal)}
-.pack .btn{width:100%}
-.note{color:var(--muted);font-size:.95rem;margin-top:16px}
-.pack .num{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:-10px}
 .pack .plus{font-weight:700;color:var(--teal)}
-.notice{margin-top:22px;background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:12px;padding:18px 20px;display:grid;gap:8px;font-size:1rem}
-.notice p{color:var(--ink)}
-.cta-band{background:var(--teal);color:var(--on-teal);border-radius:22px;padding:40px 32px;text-align:center;display:grid;gap:14px;justify-items:center}
-.cta-band .kicker{font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;opacity:.85}
-.cta-band h2{max-width:22ch}
-.cta-band p{max-width:46ch;opacity:.92}
-.cta-band .btn.wa{background:var(--on-teal);color:var(--teal);margin-top:8px}
+.pack .goal{background:var(--bg);border-radius:12px;padding:14px 16px;font-size:.95rem;color:var(--muted);flex:1}
+.pack .goal b{display:block;color:var(--ink);margin-bottom:4px}
+.pack .fine{font-size:.85rem;color:var(--muted)}
+.pack .btn{width:100%}
 
-.compare{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:18px}
-table{width:100%;border-collapse:collapse;min-width:560px;font-size:1rem}
-th,td{padding:14px 16px;border-bottom:1px solid var(--line);text-align:center}
-th:first-child,td:first-child{text-align:left}
-thead th{font-family:var(--f-display);font-size:1.15rem}
+.notice{margin-top:22px;background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:12px;padding:18px 20px;display:grid;gap:8px;font-size:1rem}
+
+/* Tabla: en el celular entra completa con columnas cortas */
+.compare{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+table{width:100%;border-collapse:collapse;font-size:1rem;table-layout:fixed}
+th,td{padding:14px 12px;border-bottom:1px solid var(--line);text-align:center;vertical-align:middle}
+th:first-child,td:first-child{text-align:left;width:46%}
+thead th{font-family:var(--f-display);font-size:1.1rem;background:var(--teal-soft)}
+thead th small{display:block;font-family:var(--f-body);font-size:.8rem;font-weight:400;color:var(--muted)}
 tbody tr:last-child td{border-bottom:0}
 .yes{color:var(--teal);font-weight:700}
 .no{color:var(--muted)}
+tr.total td{font-family:var(--f-display);font-weight:600;font-size:1.15rem;background:var(--bg)}
+@media (max-width:560px){th,td{padding:12px 6px;font-size:.92rem}th:first-child,td:first-child{width:40%;padding-left:12px}thead th{font-size:1rem}tr.total td{font-size:.95rem;white-space:nowrap}}
+.fineprint{color:var(--muted);font-size:.95rem;margin-top:14px}
 
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
-@media (max-width:820px){.steps{grid-template-columns:1fr}}
+.cta-inline{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:10px;justify-items:start}
+.cta-inline p{color:var(--muted)}
+.cta-inline .btn{margin-top:8px}
+
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;counter-reset:s}
 .step{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
 .step::before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--gold-soft);color:var(--gold);font-family:var(--f-display);font-size:1.3rem;font-weight:600;margin-bottom:12px}
 .step p{color:var(--muted);margin-top:6px;font-size:1rem}
+.step p+p{margin-top:8px}
 
-.placeholder{border:2px dashed var(--line);border-radius:16px;padding:26px;color:var(--muted);text-align:center}
+.conds{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.conds li{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
 
-.story{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+.story{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);margin:0}
 .story img{width:100%;height:100%;object-fit:cover;display:block;min-height:320px}
 .story .body{padding:34px;display:flex;flex-direction:column;gap:18px;justify-content:center}
-.story .label{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700}
-.story blockquote{margin:0;font-family:var(--f-display);font-size:1.35rem;line-height:1.4;display:grid;gap:14px}
+.story blockquote{margin:0;font-family:var(--f-display);font-size:1.3rem;line-height:1.4;display:grid;gap:14px}
 .story blockquote p:last-child{color:var(--teal);font-weight:600}
-.story .who{color:var(--muted);font-size:.95rem}
+.story .who{color:var(--muted);font-size:.9rem}
 @media (max-width:760px){.story{grid-template-columns:1fr}.story img{max-height:420px;object-position:center 30%}.story .body{padding:26px 22px}}
 
 details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 20px}
 details+details{margin-top:10px}
 summary{cursor:pointer;font-weight:700;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
 summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--teal)}
 details[open] summary::after{content:"−"}
-details p{padding-bottom:16px;color:var(--muted)}
+details .ans{padding-bottom:16px;color:var(--muted);display:grid;gap:10px}
 
-footer{border-top:1px solid var(--line);padding-block:32px;color:var(--muted);font-size:.95rem;display:grid;gap:8px}
+.about{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:start}
+.portrait{width:200px;aspect-ratio:1;border-radius:50%;background:var(--teal-soft);display:grid;place-items:center;font-family:var(--f-display);font-size:3.4rem;color:var(--teal);border:1px solid var(--line)}
+@media (max-width:700px){.about{grid-template-columns:1fr}.portrait{width:140px;font-size:2.4rem}}
+
+.closing{background:var(--teal);color:var(--on-teal);border-radius:22px;padding:44px 28px;text-align:center;display:grid;gap:14px;justify-items:center}
+.closing .kicker{color:var(--on-teal);opacity:.85}
+.closing h2{max-width:22ch}
+.closing p{max-width:50ch;opacity:.92}
+.closing .big{font-family:var(--f-display);font-size:1.35rem;opacity:1}
+.closing .btn.wa{background:var(--on-teal);color:var(--teal);margin-top:8px}
+
+footer{border-top:1px solid var(--line);padding-block:32px;color:var(--muted);font-size:.95rem;display:grid;gap:10px}
+footer .social{display:flex;flex-wrap:wrap;gap:16px}
 
 .sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:5}
 .sticky .btn{width:100%;max-width:480px}
-@media (prefers-reduced-motion:no-preference){.btn{transition:transform .15s}.btn:hover{transform:translateY(-1px)}}
 </style>
 </head>
 <body>
@@ -137,43 +154,36 @@ footer{border-top:1px solid var(--line);padding-block:32px;color:var(--muted);fo
 
 <div class="wrap">
   <header class="top">
-    <div class="brand"><small>Anestesiología</small>Dra. Amalia Núñez</div>
+    <div class="brand"><small>Anestesiología</small>Dra. Amalia Ana Núñez<span>M.P. 62496</span></div>
     <a class="btn ghost" href="#packs" style="min-height:46px;padding:0 18px;font-size:.95rem">Ver los packs</a>
   </header>
 
+  <!-- 1. PORTADA -->
   <div class="hero">
-    <div>
-      <h1>Llegá a tu cirugía tranquila y preparada</h1>
-      <p class="lead">Soy médica anestesióloga. Te acompaño antes, durante y después de tu operación, para que sepas qué va a pasar en cada momento.</p>
-      <div class="actions">
-        <a class="btn primary" href="#packs">Ver los packs</a>
-        <a class="btn ghost wa-link" data-msg="Hola, quiero el checklist gratis para mi cirugía" href="#">Pedir el checklist gratis</a>
-      </div>
+    <div class="kicker">¿Te vas a operar?</div>
+    <h1>Te ayudo a prepararte para vivir tu cirugía con menos miedo, más información y confianza</h1>
+    <p class="body">Soy la Dra. Amalia Ana Núñez, médica anestesióloga, y desde hace más de 30 años acompaño a personas que van a operarse.</p>
+    <div class="actions">
+      <a class="btn wa wa-link" data-msg="Hola Dra. Núñez, me voy a operar y quiero hacerle una consulta" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Consultar gratis por WhatsApp</a>
+      <a class="btn ghost" href="#packs">Ver los packs</a>
     </div>
-    <aside class="timeline" aria-label="Qué cubre el acompañamiento">
-      <div class="label">Tu cirugía, paso a paso</div>
-      <ol>
-        <li><div><b>Semanas antes</b><span>Qué estudios llevar, qué medicación avisar</span></div></li>
-        <li><div><b>La noche anterior</b><span>Cuántas horas de ayuno y qué sí podés tomar</span></div></li>
-        <li><div><b>En el quirófano</b><span>Cómo es la anestesia y qué vas a sentir</span></div></li>
-        <li><div><b>Al despertar</b><span>Qué es normal y qué conviene avisar</span></div></li>
-        <li><div><b>Primeras semanas</b><span>Recuperación y seguimiento</span></div></li>
-      </ol>
-    </aside>
   </div>
 </div>
 
-<section style="background:var(--surface);border-block:1px solid var(--line)">
+<section class="band">
   <div class="wrap">
     <div class="section-head">
-      <h2>Si te vas a operar, seguramente te preguntás</h2>
-      <p>Son las dudas que más escucho antes de entrar al quirófano. Todas tienen respuesta.</p>
+      <h2>Una cirugía puede generar miedo, estrés, dudas e incertidumbre</h2>
     </div>
     <div class="fears">
-      <div class="fear">"¿Y si no me despierto de la anestesia?"</div>
-      <div class="fear">"¿Cuántas horas antes tengo que dejar de comer?"</div>
-      <div class="fear">"¿Qué voy a sentir cuando me despierte?"</div>
-      <div class="fear">"¿Tengo que dejar mis remedios?"</div>
+      <div class="fear">¿Te preocupa la anestesia?</div>
+      <div class="fear">¿Tenés miedo al dolor?</div>
+      <div class="fear">¿No sabés qué esperar antes, durante o después de la cirugía?</div>
+    </div>
+    <div class="stack" style="margin-top:28px">
+      <p><strong style="color:var(--ink)">No tenés que afrontar todas esas dudas sin orientación.</strong></p>
+      <p>Creé mis Packs de Preparación Quirúrgica para ayudarte a comprender cada etapa de tu cirugía, organizar tu preparación y llegar al quirófano con más tranquilidad y confianza.</p>
+      <p>Mi objetivo es ayudarte a transformar tus miedos, tu incertidumbre y tu estrés en preparación, información y confianza para operarte.</p>
     </div>
   </div>
 </section>
@@ -182,158 +192,259 @@ footer{border-top:1px solid var(--line);padding-block:32px;color:var(--muted);fo
   <section>
     <div class="free">
       <div>
-        <h2>Empezá gratis</h2>
-        <p>Te mando por WhatsApp la lista de qué llevar y qué avisar el día de tu cirugía. Sin costo y sin compromiso.</p>
+        <h2>¿Querés saber si puedo ayudarte?</h2>
+        <p><strong style="color:var(--ink)">El primer contacto es gratuito.</strong> Contame qué cirugía vas a realizarte, cuáles son tus preocupaciones y cuándo tenés previsto operarte.</p>
+        <p>Voy a escucharte y orientarte sobre si mi servicio puede ayudarte y qué opción podría ser adecuada para vos.</p>
       </div>
-      <a class="btn wa wa-link" data-msg="Hola, quiero el checklist gratis para mi cirugía" href="#">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
-        Quiero el checklist
-      </a>
+      <a class="btn wa wa-link" data-msg="Hola Dra. Núñez, me voy a operar y quiero hacerle una consulta" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Consultar gratis por WhatsApp</a>
     </div>
   </section>
 
+  <!-- 2. PACKS -->
   <section id="packs">
     <div class="section-head">
       <h2>Elegí cómo querés prepararte</h2>
-      <p>Tres opciones según lo que necesites: llegar con información clara, tener acompañamiento durante un mes o una orientación adaptada a tu cirugía y a tu salud.</p>
+      <p>Cada paciente es diferente. Cada cirugía también. Por eso creé tres opciones de preparación y acompañamiento, para que puedas elegir la que mejor se adapte a tus necesidades.</p>
     </div>
     <div class="packs">
       <article class="pack">
-        <div class="num">Pack 1</div>
+        <div class="kicker num">Pack 1</div>
         <h3>Preparación</h3>
-        <p class="for">Información clara para llegar preparado.</p>
-        <div class="price">USD 50 <small>pago único</small></div>
+        <p class="for">Para que sepas qué esperar y cómo prepararte antes, durante y después de tu cirugía.</p>
+        <div class="price" data-price="1">USD 50</div>
         <ul>
-          <li>Guías preoperatorias</li>
-          <li>Guías postoperatorias</li>
-          <li>Una consulta conmigo</li>
+          <li>Guía de preparación preoperatoria</li>
+          <li>Guía sobre qué esperar durante el proceso quirúrgico</li>
+          <li>Guía de preparación para el postoperatorio</li>
+          <li>Un contacto por WhatsApp conmigo para resolver las dudas comprendidas en el pack</li>
         </ul>
-        <a class="btn ghost wa-link" data-msg="Hola, quiero el Pack 1 — Preparación" href="#">Quiero el Pack 1</a>
+        <div class="goal"><b>¿Qué buscás conseguir?</b>Llegar mejor informado, conocer los pasos de tu preparación y contar con orientación para afrontar el proceso quirúrgico.</div>
+        <a class="btn ghost wa-link" data-msg="Hola Dra. Núñez, quiero conocer el Pack 1 (Preparación)" href="#">Quiero conocer el Pack 1</a>
       </article>
 
       <article class="pack featured">
         <span class="badge">Recomendado</span>
-        <div class="num">Pack 2</div>
-        <h3>Acompañamiento</h3>
-        <p class="for">Preparación y seguimiento durante un mes.</p>
-        <div class="price">USD 110 <small>pago único</small></div>
+        <div class="kicker num">Pack 2</div>
+        <h3>Preparación y acompañamiento</h3>
+        <p class="for">Para quienes necesitan más acompañamiento y orientación personalizada antes de operarse.</p>
+        <div class="price" data-price="2">USD 110</div>
         <ul>
           <li><span><span class="plus">Todo lo del Pack 1</span>, más:</span></li>
-          <li>Dos llamadas conmigo</li>
-          <li>Orientación sobre el dolor y la ansiedad</li>
-          <li>Seguimiento durante un mes</li>
+          <li>Dos contactos de orientación por WhatsApp conmigo</li>
+          <li>Orientación sobre el tratamiento del dolor, para que puedas conversarlo con tu equipo médico</li>
+          <li>Seguimiento de tu preparación, según las condiciones acordadas</li>
+          <li>Acompañamiento para resolver dudas relacionadas con tu proceso quirúrgico</li>
         </ul>
-        <a class="btn primary wa-link" data-msg="Hola, quiero el Pack 2 — Acompañamiento" href="#">Quiero el Pack 2</a>
+        <div class="goal"><b>¿Qué buscás conseguir?</b>Prepararte con más acompañamiento, comprender mejor qué cuestiones debés conversar con tus médicos y afrontar la cirugía con mayor información y confianza.</div>
+        <a class="btn primary wa-link" data-msg="Hola Dra. Núñez, quiero conocer el Pack 2 (Preparación y acompañamiento)" href="#">Quiero conocer el Pack 2</a>
       </article>
 
       <article class="pack">
-        <div class="num">Pack 3</div>
-        <h3>Plan personalizado</h3>
-        <p class="for">Orientación adaptada a tu cirugía y a tu salud.</p>
-        <div class="price">USD 180 <small>pago único</small></div>
+        <div class="kicker num">Pack 3</div>
+        <h3>Plan personalizado de preparación quirúrgica</h3>
+        <p class="for">Tu cirugía es particular. Tu preparación también puede serlo. Pensado para quienes necesitan orientación adaptada a su tipo de cirugía y a sus circunstancias. Por ejemplo, una cirugía de hombro, una prótesis de rodilla u otra intervención que requiera trabajar aspectos específicos de la preparación y la recuperación.</p>
+        <div class="price" data-price="3">USD 180</div>
         <ul>
           <li><span><span class="plus">Todo lo del Pack 2</span>, más:</span></li>
-          <li>Plan específico de orientación anestésica y analgésica</li>
-          <li>Guías para condiciones clínicas particulares</li>
+          <li>Un plan de preparación específico según el tipo de cirugía</li>
+          <li>Orientación educativa sobre las alternativas anestésicas que corresponda conversar con tu anestesiólogo</li>
+          <li>Orientación sobre el tratamiento del dolor y la recuperación, según el procedimiento</li>
+          <li>Una videollamada personalizada conmigo, en el momento más útil para tu preparación</li>
+          <li>Organización de las dudas y preguntas que necesitás resolver antes de operarte</li>
         </ul>
-        <a class="btn ghost wa-link" data-msg="Hola, quiero el Pack 3 — Plan personalizado" href="#">Quiero el Pack 3</a>
+        <div class="goal"><b>¿Qué buscás conseguir?</b>Tener una preparación más específica, conocer qué aspectos de tu cirugía requieren especial atención y llegar con tus dudas mejor organizadas.</div>
+        <p class="fine">El contenido del plan se adapta a las necesidades que se identifiquen durante el contacto inicial. Las decisiones clínicas y el plan anestésico definitivo corresponden a los profesionales responsables de tu atención.</p>
+        <a class="btn ghost wa-link" data-msg="Hola Dra. Núñez, quiero consultar por el Pack 3 (Plan personalizado)" href="#">Quiero consultar por el Pack 3</a>
       </article>
     </div>
-    <p class="note">Podés pagar por transferencia o con Mercado Pago, en dólares o su equivalente en pesos.</p>
     <div class="notice">
-      <p><strong>Cada paciente y cada cirugía son diferentes.</strong> La orientación se adapta a tu situación clínica y a las indicaciones de tu equipo tratante.</p>
-      <p>Este servicio es de orientación preoperatoria y acompañamiento. No reemplaza la evaluación presencial, las indicaciones del anestesiólogo responsable de tu cirugía ni la atención de urgencias.</p>
+      <p><strong>Un servicio complementario.</strong> Mis packs son un servicio de educación, preparación y acompañamiento. No reemplazan la consulta preanestésica, la evaluación de tu estado de salud ni las indicaciones del anestesiólogo y del equipo médico responsables de tu atención.</p>
     </div>
   </section>
 
+  <!-- 3. TABLA -->
   <section>
-    <div class="section-head"><h2>Qué incluye cada pack</h2></div>
+    <div class="section-head"><h2>¿Qué incluye cada pack?</h2></div>
     <div class="compare">
       <table>
-        <thead><tr><th>Incluye</th><th>Preparación</th><th>Acompañamiento</th><th>Plan personalizado</th></tr></thead>
+        <thead><tr><th>Servicio</th><th>Pack 1</th><th>Pack 2</th><th>Pack 3</th></tr></thead>
         <tbody>
-          <tr><td>Guías pre y postoperatorias</td><td class="yes">Sí</td><td class="yes">Sí</td><td class="yes">Sí</td></tr>
-          <tr><td>Una consulta conmigo</td><td class="yes">Sí</td><td class="yes">Sí</td><td class="yes">Sí</td></tr>
-          <tr><td>Dos llamadas</td><td class="no">No</td><td class="yes">Sí</td><td class="yes">Sí</td></tr>
-          <tr><td>Orientación sobre dolor y ansiedad</td><td class="no">No</td><td class="yes">Sí</td><td class="yes">Sí</td></tr>
-          <tr><td>Seguimiento durante un mes</td><td class="no">No</td><td class="yes">Sí</td><td class="yes">Sí</td></tr>
-          <tr><td>Plan de orientación anestésica y analgésica</td><td class="no">No</td><td class="no">No</td><td class="yes">Sí</td></tr>
-          <tr><td>Guías para condiciones clínicas particulares</td><td class="no">No</td><td class="no">No</td><td class="yes">Sí</td></tr>
+          <tr><td>Guía preoperatoria</td><td class="yes">Sí</td><td class="yes">Sí</td><td class="yes">Sí</td></tr>
+          <tr><td>Guía sobre el proceso quirúrgico</td><td class="yes">Sí</td><td class="yes">Sí</td><td class="yes">Sí</td></tr>
+          <tr><td>Guía postoperatoria</td><td class="yes">Sí</td><td class="yes">Sí</td><td class="yes">Sí</td></tr>
+          <tr><td>Contactos de orientación por WhatsApp</td><td class="yes">1</td><td class="yes">2</td><td class="yes">2</td></tr>
+          <tr><td>Orientación sobre tratamiento del dolor</td><td class="no">No</td><td class="yes">Sí</td><td class="yes">Sí</td></tr>
+          <tr><td>Seguimiento de la preparación</td><td class="no">No</td><td class="yes">Sí</td><td class="yes">Sí</td></tr>
+          <tr><td>Plan específico según la cirugía</td><td class="no">No</td><td class="no">No</td><td class="yes">Sí</td></tr>
+          <tr><td>Orientación sobre alternativas anestésicas</td><td class="no">No</td><td class="no">No</td><td class="yes">Sí</td></tr>
+          <tr><td>Videollamada personalizada</td><td class="no">No</td><td class="no">No</td><td class="yes">Sí</td></tr>
+          <tr class="total"><td>Precio</td><td data-price="1">USD 50</td><td data-price="2">USD 110</td><td data-price="3">USD 180</td></tr>
         </tbody>
       </table>
     </div>
-  </section>
+    <p class="fineprint">Los contactos, el seguimiento y las modalidades de atención se realizan de acuerdo con las condiciones explicadas antes de contratar cada pack.</p>
 
-  <section>
-    <div class="section-head"><h2>Cómo funciona</h2></div>
-    <div class="steps">
-      <div class="step"><h3>Elegís tu pack</h3><p>Me escribís por WhatsApp con el pack que te interesa. Si tenés dudas sobre cuál elegir, te ayudo.</p></div>
-      <div class="step"><h3>Pagás como te quede cómodo</h3><p>Por transferencia o con Mercado Pago, en dólares o su equivalente en pesos.</p></div>
-      <div class="step"><h3>Empezás a prepararte</h3><p>Recibís las guías por WhatsApp y coordinamos tu consulta. Si tu pack las incluye, también las llamadas y el seguimiento.</p></div>
+    <div class="cta-inline">
+      <h3>¿No sabés qué pack elegir?</h3>
+      <p>No tenés que decidirlo sola. Primero contame tu situación y evaluaremos qué tipo de preparación podría ayudarte.</p>
+      <a class="btn wa wa-link" data-msg="Hola Dra. Núñez, no sé qué pack elegir y quiero hacerle una consulta" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Consultar gratis por WhatsApp</a>
     </div>
   </section>
 
+  <!-- 4. CÓMO FUNCIONA -->
   <section>
-    <div class="section-head"><h2>Una historia real</h2></div>
-    <figure class="story" style="margin:0">
+    <div class="section-head"><div class="kicker">¿Cómo funciona?</div><h2>Empezar es muy sencillo</h2></div>
+    <div class="steps">
+      <div class="step"><h3>Contactame</h3><p>Escribime por WhatsApp. Contame qué cirugía vas a realizarte, cuándo está prevista y qué es lo que más te preocupa.</p></div>
+      <div class="step"><h3>Conversemos</h3><p>El primer contacto es gratuito. Voy a escucharte, evaluar si puedo ayudarte y orientarte sobre qué pack podría adaptarse mejor a tus necesidades.</p><p>Si tu situación requiere una atención diferente o excede el alcance de mi servicio, te lo voy a explicar con claridad.</p></div>
+      <div class="step"><h3>Elegí tu pack</h3><p>Si mi servicio es apropiado para vos, te explico qué incluye cada opción, sus condiciones y cómo funciona el acompañamiento.</p></div>
+      <div class="step"><h3>Realizá el pago</h3><p>Por transferencia bancaria o Mercado Pago, en dólares o en su equivalente, según las condiciones acordadas.</p></div>
+      <div class="step"><h3>Empezá a prepararte</h3><p>Una vez confirmado el pago, recibís las indicaciones para acceder a las guías y comenzar el acompañamiento de tu pack.</p></div>
+    </div>
+    <div style="margin-top:24px"><a class="btn wa wa-link" data-msg="Hola Dra. Núñez, quiero empezar mi preparación para la cirugía" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Quiero empezar mi preparación</a></div>
+  </section>
+</div>
+
+<!-- 5. SEGÚN TU SALUD -->
+<section class="band">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Porque no todos los pacientes necesitan lo mismo</div>
+      <h2>Preparación según tu cirugía y tu estado de salud</h2>
+      <p>Además de las guías generales, podemos evaluar materiales educativos complementarios según tus antecedentes y necesidades. Por ejemplo:</p>
+    </div>
+    <ul class="conds" style="max-width:62ch">
+      <li>Preparación para personas con diabetes</li>
+      <li>Preparación para personas con hipertensión arterial</li>
+      <li>Materiales sobre otras enfermedades o condiciones que deban tenerse en cuenta antes de una cirugía</li>
+    </ul>
+    <div class="stack" style="margin-top:20px">
+      <p>La disponibilidad y pertinencia de estos materiales se evalúan según cada caso. Estos recursos complementan, pero no reemplazan, las indicaciones de los profesionales responsables de tu atención.</p>
+    </div>
+    <div style="margin-top:24px"><a class="btn wa wa-link" data-msg="Hola Dra. Núñez, quiero consultar por mi caso particular" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Consultar por mi caso particular</a></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <!-- 6. HISTORIA REAL -->
+  <section>
+    <div class="section-head">
+      <div class="kicker">Una historia real</div>
+      <h2>Hugo y Julia: una experiencia para compartir</h2>
+      <p>Detrás de cada cirugía hay una persona, una familia, preguntas y emociones.</p>
+    </div>
+    <figure class="story">
       <img src="data:image/jpeg;base64,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Du9dUEMJokAFQYIE4Bp0/smRIPEoEUkYWOKCYuL5t5VbcgAQ8ccQwAcVcn4x/gsQsgMEgBSNZ0CnrRoVYss88sowI4Uo1moii0sgLzhBVs3DV2lNsHtlrYQQkY6aaAQ0J9p95Ah+aOR3RBoAu485R80+k6FNYg4Oy8Y84cih8+tAOAocsA8IGSMW/wBGK1bIWcLKMFGINLONKrAHJiFAINCAAEhkDip2PzdXSQgNukloDopEkCMnjhCOMMDngonpBpH9yXAfRcljjqpACFgplrFLBLLJPCPBLJDOskkNOo8Hi2jttvivrjoujkivHLMDHHGEPJDHChiomnbLiAhsugimspvhrksiqlusgsslkkouNJAjkpsjfvhsohkumggmhjignpupuovlghogrnoksqknjKd8wzz3xz377/8A9ON+sMMHcs89k20f9/Nc120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/xAAC/9oADAMBAAIAAwAAABCrXTSjG90p61gJc/oay777777777rgdV3ctuNSaBh7zWUCVG2+Qysuz77777774Auu3mu9tmfCs94dEKGMr1+hrdlEHrb7b7b6RMeu+smWIABFeMV5gxIASwoIHuWMi5Lqr54CNHs8lGFBwE3ct9MEpCRR5bL/AH3H7oyGCiqCsajZ3eCxEFgRfv8A1Ck751BNAC929DADlgqolh794sxAQEpEyYrvilG1ur1sIBWww+/CkgggkiE2g2iwD/rlgUGYsc4gp6nEqAHCm41CghgghglMp6t+ZqhvP4w+f+4gqVtq8RptEO7Bggggkgiuw/GorykqA9kv9w3BLdllgKmIveRPlhkggkgEqlfQe4uon/kiCEirgb+Ghbf2KTKNlvkrgkkAo0ff4vn0qygisYVqYq48Oi/j3dflPvglggmMJgwx3lvwvvLAywU9+N1zz7txvlRndvhvvqLsdt3/APJbocvu64VMFeovoBB75fb4l1Tb7r5z1yslPoLJtLkjd5q1XKBI4SRrNYIAClBb677z333EOYpOyGgzzjMpWqjNKymoJcYfy8QD4KrxX2AWvI5yXSTzBx7sYs7thYWqAzpKFmaMQgKFX0O9PD6WTeaCxDSDu+SgwpgR1qpkUZr47c8lQxz8NkmSeeRBp7YQSzvYgh0/bMt/w/7746JpqZu/OTiKWbij5Y4CTRO+1fvt7NOcvCywnu0nKF3uo6pGhgFFqJATjhzSy3QS/nUw0GDzgSjPUp6wADisTwm9SIJyAiSJ/WK/AW8mOkDOBTywxVoWzeExbzn8KSqCz5rhKqLDBsjCsUwAADgHLhyWitpDDgPfsdxbwhOicIK+JosEPyUhzwgdQyG2Lo5RyNNascGZa7KazmpqmJOr78ujmz5xQTiKJ7vMMdJG5anJ9L8Paq0kCA5ttbK/3yFqqvJWbj8tKwSpVG1DcP8ATu2NYnrQmv3D4OO2yCLG/nLzIeM5uCq8ALD/AL8/57MPlLAg793/AM9beb64KsN//wDLGAM1EHrD/LPCeLiKQP8At841u1mk/wCM89+OONc4DRcNOMPe9ut6s/y1wisNd/7/APj/AP3887z+04tWGA4ww9/40h00zP73MD8gw41//wD69Qv/APrnSM/oPDDLDjr6vPmwSjm/fnESCD/evirjLDWTvoajMrXrDDznHPto5xzPPubzZHOd9+nBAjDHdMoQj1ToDDC6ffszF9xNNPX/ACy/7ozy1QAAEIcSObxxNAAMKAxLKqQfTTXe81pf77jm/aAAAM42k5JJxBAKC04za8cV1ffeb+9gz/7w56AACwihun4PPECJiPQX6wwww460+60P68QRdKAAAPHgggshjODHHORz4ggkhgiyzVDAMYRICOjkDPPPOokhquAHHT3736wx83+OZOHNDSEOMHLtCLPIgggPvn3IM885wFJDENH379xJMJLEOKKC/wDDDy47zzz47EDHCATe74rL776KeRnBjyhiS/fCDDDDDjDDK5oXiieA45rK4pQJMhLZJTR3kZsMAYsMMEf+XPShL7MR744Y56JOZiFjI7BjX3AqI76LzDCGMZ6zzwTzzzzzwzzyzKYqQ2JqABA77o77rL767LLL7zzzzzzwjDyzzx7I5OdjCbApPIIIJLK7445b774KoILLMILKLzzwra5P8A/4oIIIJIJZ77777764oOPM88b6447KIJK5of05jAAQyABDDDDDDDDCAww5zwzzjDTDwwgD647zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz/xAAsEQACAQQBBAIBAwQDAAAAAAAAAhIBAxARIAQTIjAUMkIjQFAFFVJiM0GB/9oACAECAQE/ADZtxXFJ4lxsn9RuforitBKi+u46KPfNvxia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" alt="Julia le da de comer a Hugo en la habitación del hospital, después de su cirugía" loading="lazy">
       <figcaption class="body">
-        <div class="label">Hugo y Julia</div>
         <blockquote>
           <p>Hugo se operó de urgencia. Acompañé y guié a Julia, su esposa, diciéndole la verdad, aunque doliera.</p>
           <p>La tormenta pasó y hoy ella sigue junto a su marido.</p>
           <p>En los momentos más difíciles, la verdad, la guía y el acompañamiento hacen la diferencia.</p>
           <p>Preparate para tu anestesia.</p>
         </blockquote>
-        <div class="who">Dra. Amalia Núñez · Historia y foto compartidas con permiso de Hugo y Julia</div>
-        <a class="btn primary" href="#packs" style="align-self:flex-start">Elegí tu pack</a>
+        <div class="who">Historia y foto compartidas con permiso de Hugo y Julia. Cada caso es único: esta experiencia no garantiza resultados para otros pacientes.</div>
       </figcaption>
     </figure>
-  </section>
-
-  <section>
-    <div class="cta-band">
-      <div class="kicker">¿Querés prepararte mejor para tu cirugía?</div>
-      <h2>Escribime por WhatsApp para conocer los detalles y elegir tu pack</h2>
-      <p>Llegar informado también es parte de prepararte para una cirugía.</p>
-      <a class="btn wa wa-link" data-msg="Hola, me voy a operar y quiero conocer los detalles de los packs" href="#">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
-        Escribime por WhatsApp
-      </a>
+    <div class="cta-inline">
+      <h3>¿Vos también tenés una cirugía programada?</h3>
+      <p>Podemos conversar sobre tus dudas y evaluar si mi acompañamiento es adecuado para vos.</p>
+      <a class="btn wa wa-link" data-msg="Hola Dra. Núñez, tengo una cirugía programada y quiero hablar con usted" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Hablar con la Dra. Núñez</a>
     </div>
   </section>
 
+  <!-- 7. PREGUNTAS -->
   <section>
     <div class="section-head"><h2>Preguntas frecuentes</h2></div>
-    <details><summary>¿Esto reemplaza la consulta con mi anestesiólogo?</summary><p>No. Es un servicio de orientación preoperatoria y acompañamiento. No reemplaza la evaluación presencial, las indicaciones del anestesiólogo responsable de tu cirugía ni la atención de urgencias.</p></details>
-    <details><summary>¿Sirve para cualquier cirugía?</summary><p>Las guías sirven para la mayoría de las cirugías programadas. Si tu operación es compleja o tenés alguna condición clínica particular, el Pack 3 — Plan personalizado está pensado para eso.</p></details>
-    <details><summary>¿Cuándo conviene empezar?</summary><p>Lo ideal es dos o tres semanas antes de la cirugía, para tener tiempo de leer las guías y hacer la consulta con calma. Si tu cirugía es antes, escribime igual.</p></details>
-    <details><summary>¿Cómo pago y en cuánto tiempo recibo las guías?</summary><p>Por transferencia o con Mercado Pago, en dólares o su equivalente en pesos. Las guías te llegan por WhatsApp apenas se confirma el pago.</p></details>
-    <details><summary>¿Puedo comprarlo para un familiar?</summary><p>Sí. Muchas veces son los hijos quienes acompañan a sus padres en la preparación. Las guías se pueden leer juntos.</p></details>
+    <details><summary>¿Los packs reemplazan la consulta con mi anestesiólogo?</summary><div class="ans">
+      <p>No. Es muy importante que esto quede claro.</p>
+      <p>Mis packs son un servicio complementario de educación, preparación y acompañamiento. No reemplazan la consulta preanestésica formal, la evaluación de tu estado de salud ni las indicaciones del anestesiólogo que estará a cargo de tu anestesia.</p>
+      <p>Ese profesional es quien evaluará tu caso, determinará el plan anestésico y tomará las decisiones clínicas correspondientes.</p>
+      <p>Mi función es ayudarte a llegar mejor informado, con tus dudas organizadas y con más herramientas para afrontar la experiencia.</p>
+    </div></details>
+    <details><summary>¿Sirve para cualquier cirugía?</summary><div class="ans">
+      <p>La preparación general puede ser útil para muchas intervenciones, pero no todos los packs son adecuados para todos los pacientes.</p>
+      <p>Primero necesito conocer qué cirugía vas a realizarte y cuáles son tus necesidades. A partir de esa información, evaluaremos si puedo ayudarte.</p>
+    </div></details>
+    <details><summary>¿Cómo conviene empezar?</summary><div class="ans">
+      <p>Escribime por WhatsApp. Contame qué cirugía tenés programada, cuándo te operás y qué es lo que más te preocupa.</p>
+      <p>El primer contacto es gratuito y nos permite evaluar si mi servicio es apropiado para vos.</p>
+    </div></details>
+    <details><summary>¿Cómo sé qué pack me conviene?</summary><div class="ans">
+      <p>No necesitás elegirlo sin orientación. Después de conocer tu situación, te explico las opciones disponibles y cuál podría adaptarse mejor a tus necesidades.</p>
+    </div></details>
+    <details><summary>¿Cómo puedo pagar?</summary><div class="ans">
+      <p>Por transferencia bancaria o Mercado Pago, en dólares o en su equivalente.</p>
+      <p>Antes de contratar, te informo el importe final, la modalidad de pago y las condiciones correspondientes.</p>
+    </div></details>
+    <details><summary>¿Cuándo recibo las guías?</summary><div class="ans">
+      <p>Una vez confirmado el pago, te indico cómo acceder a los materiales y cómo se organiza el acompañamiento incluido en tu pack.</p>
+    </div></details>
+    <details><summary>¿Puedo consultar si tengo diabetes, hipertensión u otra enfermedad?</summary><div class="ans">
+      <p>Sí. Podemos evaluar qué materiales educativos complementarios pueden ser pertinentes para tu situación.</p>
+      <p>Las indicaciones médicas específicas relacionadas con esas enfermedades deben coordinarse con los profesionales responsables de tu atención.</p>
+    </div></details>
+    <details><summary>¿Me garantiza una cirugía sin miedo, sin dolor o sin complicaciones?</summary><div class="ans">
+      <p>No sería responsable garantizarlo.</p>
+      <p>Cada persona y cada cirugía son diferentes. Mi objetivo es ayudarte a comprender el proceso, resolver dudas, organizar tu preparación y afrontar la experiencia con más información y confianza.</p>
+      <p>El nivel de ansiedad, el dolor y la evolución postoperatoria dependen de múltiples factores. La preparación es una herramienta de acompañamiento, no una garantía de resultados clínicos.</p>
+    </div></details>
+  </section>
+
+  <!-- 8. SOBRE MÍ -->
+  <section>
+    <div class="about">
+      <div class="portrait" aria-hidden="true">AN</div>
+      <div class="stack">
+        <div class="kicker">Sobre mí</div>
+        <h2>Dra. Amalia Ana Núñez</h2>
+        <p><strong style="color:var(--ink)">Médica anestesióloga · Más de 30 años de experiencia · M.P. 62496</strong></p>
+        <p>Durante más de 30 años acompañé a personas que tenían que enfrentarse a una cirugía.</p>
+        <p>Sé que muchas veces lo más difícil no es solamente la operación, sino todo lo que pasa antes: el miedo, las dudas, la incertidumbre y no saber qué esperar.</p>
+        <p>Por eso creé este servicio de preparación quirúrgica. Quiero ayudarte a comprender mejor el proceso, conocer qué aspectos debés tener en cuenta y prepararte para vivir esta experiencia con menos miedo y más confianza.</p>
+        <p>No reemplazo al anestesiólogo que realizará tu anestesia. Mi función es prepararte y acompañarte antes de la cirugía para que llegues mejor informado y con tus dudas resueltas en la medida de lo posible.</p>
+        <p style="font-family:var(--f-display);font-size:1.3rem;color:var(--teal)">Porque estar preparado también es una forma de cuidarte.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CIERRE -->
+  <section>
+    <div class="closing">
+      <div class="kicker">Tu cirugía merece una buena preparación</div>
+      <h2>No esperes hasta el último momento para empezar a resolver tus dudas</h2>
+      <p>Conocé las opciones de preparación y descubrí si puedo ayudarte.</p>
+      <p class="big">Te ayudo a prepararte para vivir tu cirugía con menos miedo, más información y confianza.</p>
+      <p>El primer contacto es gratuito. Contame tu situación y evaluaremos juntos cuál es el siguiente paso.</p>
+      <a class="btn wa wa-link" data-msg="Hola Dra. Núñez, me voy a operar y quiero hacerle una consulta" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Escribir por WhatsApp</a>
+    </div>
   </section>
 
   <footer>
-    <div><strong style="color:var(--ink)">Dra. Amalia Núñez</strong> · Médica anestesióloga · M.P. 62496</div>
-    <div>Servicio de orientación preoperatoria y acompañamiento. No reemplaza la evaluación presencial, las indicaciones del anestesiólogo responsable ni la atención de urgencias.</div>
+    <div><strong style="color:var(--ink)">Dra. Amalia Ana Núñez</strong> · Médica anestesióloga · M.P. 62496</div>
+    <div class="social">
+      <a class="wa-link" data-msg="Hola Dra. Núñez, quiero hacerle una consulta" href="#">WhatsApp</a>
+      <a href="https://www.instagram.com/dranunezamalia/" target="_blank" rel="noopener">Instagram @dranunezamalia</a>
+    </div>
+    <div>Servicio complementario de educación, preparación y acompañamiento. No reemplaza la consulta preanestésica, la evaluación presencial, las indicaciones del anestesiólogo y del equipo médico responsables ni la atención de urgencias.</div>
   </footer>
 </div>
 
 <div class="sticky">
-  <a class="btn wa wa-link" data-msg="Hola, me voy a operar y quiero información sobre los packs" href="#">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
-    Escribime por WhatsApp
-  </a>
+  <a class="btn wa wa-link" data-msg="Hola Dra. Núñez, me voy a operar y quiero hacerle una consulta" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Consultar gratis por WhatsApp</a>
 </div>
 
 <script>
-// Cambiá este número por el de la doctora: código de país 549 + código de área sin 0 + número sin 15
+/* ===== DATOS PARA EDITAR =====
+   WhatsApp: 549 + código de área sin 0 + número sin 15
+   Precios: cambiá el número y se actualiza en las tarjetas y en la tabla */
 const WHATSAPP = "5493364325665";
+const PRECIOS = { 1: "USD 50", 2: "USD 110", 3: "USD 180" };
+/* ============================= */
+document.querySelectorAll("[data-price]").forEach(el => { const p = PRECIOS[el.dataset.price]; if (p) el.textContent = p; });
 document.querySelectorAll(".wa-link").forEach(a => {
   a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(a.dataset.msg);
-  a.target = "_blank";
-  a.rel = "noopener";
+  a.target = "_blank"; a.rel = "noopener";
 });
 </script>
-
 </body>
 </html>
