@@ -139,6 +139,10 @@ details .ans{padding-bottom:16px;color:var(--muted);display:grid;gap:10px}
 .closing h2{max-width:22ch}
 .closing p{max-width:50ch;opacity:.92}
 .closing .big{font-family:var(--f-display);font-size:1.35rem;opacity:1}
+.mailline{margin-top:12px;font-size:1rem}
+.mailline a,.step a{overflow-wrap:anywhere}
+.closing a.maillight{color:var(--on-teal);font-weight:700;overflow-wrap:anywhere;display:inline-block;font-size:.95rem}
+@media (max-width:400px){.closing a.maillight{font-size:.88rem}}
 .closing .btn.wa{background:var(--on-teal);color:var(--teal);margin-top:8px}
 
 footer{border-top:1px solid var(--line);padding-block:32px;color:var(--muted);font-size:.95rem;display:grid;gap:10px}
@@ -150,7 +154,6 @@ footer .social{display:flex;flex-wrap:wrap;gap:16px}
 </head>
 <body>
 
-<div class="draft">Borrador para revisión</div>
 
 <div class="wrap">
   <header class="top">
@@ -195,6 +198,7 @@ footer .social{display:flex;flex-wrap:wrap;gap:16px}
         <h2>¿Querés saber si puedo ayudarte?</h2>
         <p><strong style="color:var(--ink)">El primer contacto es gratuito.</strong> Contame qué cirugía vas a realizarte, cuáles son tus preocupaciones y cuándo tenés previsto operarte.</p>
         <p>Voy a escucharte y orientarte sobre si mi servicio puede ayudarte y qué opción podría ser adecuada para vos.</p>
+        <p class="mailline">Consultas por WhatsApp o por correo:<br><a href="mailto:preconsultanestesica@gmail.com?subject=Consulta%20por%20mi%20cirug%C3%ADa">preconsultanestesica@gmail.com</a></p>
       </div>
       <a class="btn wa wa-link" data-msg="Hola Dra. Núñez, me voy a operar y quiero hacerle una consulta" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Consultar gratis por WhatsApp</a>
     </div>
@@ -295,7 +299,7 @@ footer .social{display:flex;flex-wrap:wrap;gap:16px}
   <section>
     <div class="section-head"><div class="kicker">¿Cómo funciona?</div><h2>Empezar es muy sencillo</h2></div>
     <div class="steps">
-      <div class="step"><h3>Contactame</h3><p>Escribime por WhatsApp. Contame qué cirugía vas a realizarte, cuándo está prevista y qué es lo que más te preocupa.</p></div>
+      <div class="step"><h3>Contactame</h3><p>Escribime por WhatsApp o a <a href="mailto:preconsultanestesica@gmail.com?subject=Consulta%20por%20mi%20cirug%C3%ADa">preconsultanestesica@gmail.com</a>. Contame qué cirugía vas a realizarte, cuándo está prevista y qué es lo que más te preocupa.</p></div>
       <div class="step"><h3>Conversemos</h3><p>El primer contacto es gratuito. Voy a escucharte, evaluar si puedo ayudarte y orientarte sobre qué pack podría adaptarse mejor a tus necesidades.</p><p>Si tu situación requiere una atención diferente o excede el alcance de mi servicio, te lo voy a explicar con claridad.</p></div>
       <div class="step"><h3>Elegí tu pack</h3><p>Si mi servicio es apropiado para vos, te explico qué incluye cada opción, sus condiciones y cómo funciona el acompañamiento.</p></div>
       <div class="step"><h3>Realizá el pago</h3><p>Por transferencia bancaria o Mercado Pago, en dólares o en su equivalente, según las condiciones acordadas.</p></div>
@@ -366,7 +370,7 @@ footer .social{display:flex;flex-wrap:wrap;gap:16px}
       <p>Primero necesito conocer qué cirugía vas a realizarte y cuáles son tus necesidades. A partir de esa información, evaluaremos si puedo ayudarte.</p>
     </div></details>
     <details><summary>¿Cómo conviene empezar?</summary><div class="ans">
-      <p>Escribime por WhatsApp. Contame qué cirugía tenés programada, cuándo te operás y qué es lo que más te preocupa.</p>
+      <p>Escribime por WhatsApp o a <a href="mailto:preconsultanestesica@gmail.com?subject=Consulta%20por%20mi%20cirug%C3%ADa">preconsultanestesica@gmail.com</a>. Contame qué cirugía tenés programada, cuándo te operás y qué es lo que más te preocupa.</p>
       <p>El primer contacto es gratuito y nos permite evaluar si mi servicio es apropiado para vos.</p>
     </div></details>
     <details><summary>¿Cómo sé qué pack me conviene?</summary><div class="ans">
@@ -416,6 +420,7 @@ footer .social{display:flex;flex-wrap:wrap;gap:16px}
       <p class="big">Te ayudo a prepararte para vivir tu cirugía con menos miedo, más información y confianza.</p>
       <p>El primer contacto es gratuito. Contame tu situación y evaluaremos juntos cuál es el siguiente paso.</p>
       <a class="btn wa wa-link" data-msg="Hola Dra. Núñez, me voy a operar y quiero hacerle una consulta" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Escribir por WhatsApp</a>
+      <p>También podés escribirme a <a class="maillight" href="mailto:preconsultanestesica@gmail.com?subject=Consulta%20por%20mi%20cirug%C3%ADa">preconsultanestesica@gmail.com</a></p>
     </div>
   </section>
 
@@ -423,6 +428,7 @@ footer .social{display:flex;flex-wrap:wrap;gap:16px}
     <div><strong style="color:var(--ink)">Dra. Amalia Ana Núñez</strong> · Médica anestesióloga · M.P. 62496</div>
     <div class="social">
       <a class="wa-link" data-msg="Hola Dra. Núñez, quiero hacerle una consulta" href="#">WhatsApp</a>
+      <a href="mailto:preconsultanestesica@gmail.com?subject=Consulta%20por%20mi%20cirug%C3%ADa">preconsultanestesica@gmail.com</a>
       <a href="https://www.instagram.com/dranunezamalia/" target="_blank" rel="noopener">Instagram @dranunezamalia</a>
     </div>
     <div>Servicio complementario de educación, preparación y acompañamiento. No reemplaza la consulta preanestésica, la evaluación presencial, las indicaciones del anestesiólogo y del equipo médico responsables ni la atención de urgencias.</div>
